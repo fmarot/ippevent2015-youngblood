@@ -1,23 +1,25 @@
 package org.jsadaoui.demo.marketplace.spring;
 
-import org.jsadaoui.demo.marketplace.MarketPlace;
-import org.jsadaoui.demo.marketplace.Spring;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/marketplace")
-@Spring
+//@Spring
 public class MarketPlaceResource {
+	
+	public MarketPlaceResource() {
+		int i = 1;
+	}
 
 	@Autowired
-	@Platform(Platform.OperatingSystems.IOS)
-	private MarketPlace ios;
+//	@Platform(Platform.OperatingSystems.IOS)
+	private AppleMarketPlace ios;
 	
 	@Autowired
-	@Platform(Platform.OperatingSystems.ANDROID)
-	private MarketPlace android;
+//	@Platform(Platform.OperatingSystems.ANDROID)
+	private GoogleMarketPlace android;
 	
 	@RequestMapping("/ios")
 	public String ios() {

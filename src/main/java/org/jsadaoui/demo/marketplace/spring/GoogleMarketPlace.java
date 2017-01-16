@@ -5,8 +5,8 @@ import org.jsadaoui.demo.marketplace.Spring;
 import org.springframework.stereotype.Component;
 
 @Component
-@Platform(Platform.OperatingSystems.ANDROID)
-@Spring
+//@Platform(Platform.OperatingSystems.ANDROID)
+//@Spring
 public class GoogleMarketPlace implements MarketPlace {
 
 	@Override

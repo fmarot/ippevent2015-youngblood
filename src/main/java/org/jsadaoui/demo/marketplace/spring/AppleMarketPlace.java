@@ -5,8 +5,8 @@ import org.jsadaoui.demo.marketplace.Spring;
 import org.springframework.stereotype.Component;
 
 @Component
-@Platform(Platform.OperatingSystems.IOS)
-@Spring
+//@Platform(Platform.OperatingSystems.IOS)
+//@Spring
 public class AppleMarketPlace implements MarketPlace {
 
 	@Override
